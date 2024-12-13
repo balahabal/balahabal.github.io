@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KTBG SPORTS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy Football Insights</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 2rem;
+    }
+    .chart-container {
+      max-width: 700px;
+      margin: 2rem auto;
+    }
+    table.dataTable {
+      width: 100%;
+      margin: 2rem 0;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hi KTBG</h1>
-    <p>Welcome to the game.</p>
+  <header class="text-center py-5">
+    <h1 class="text-4xl font-bold">Fantasy Football Insights</h1>
+    <p class="text-lg text-gray-500">Unveiling this season’s trends, luck factors, and auction steals</p>
+  </header>
+
+  <!-- Tables -->
+  <section id="tables" class="my-10">
+    <h2 class="text-2xl font-semibold mb-4">Optimal Lineup Efficiency</h2>
+    <table id="efficiencyTable" class="display"></table>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Luck Index</h2>
+    <table id="luckTable" class="display"></table>
+
+    <h2 class="text-2xl font-semibold mt-10 mb-4">Biggest Breakouts & Values</h2>
+    <table id="breakoutsTable" class="display"></table>
+  </section>
+
+  <!-- Charts -->
+  <section id="charts" class="my-10">
+    <h2 class="text-2xl font-semibold mb-4">Visualization of Key Insights</h2>
+    <div class="chart-container">
+      <canvas id="efficiencyChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="luckChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="breakoutsChart"></canvas>
+    </div>
+  </section>
+
+  <script>
+    // Load JSON data
+    async function fetchData(file) {
+      const response = await fetch(file);
+      return response.json();
+    }
+
+    // Initialize DataTables
+    async function initializeTables() {
+      const efficiencyData = await fetchData('data/league_rosters.json');
+      const luckData = await fetchData('data/weekly_matchups.json');
+      const breakoutsData = await fetchData('data/auction_draft_results.json');
+
+      // Populate tables (replace these with processed data)
+      $('#efficiencyTable').DataTable({ data: efficiencyData, columns: [{ title: "Team" }, { title: "Points Scored" }] });
+      $('#luckTable').DataTable({ data: luckData, columns: [{ title: "Team" }, { title: "Luck Index" }] });
+      $('#breakoutsTable').DataTable({ data: breakoutsData, columns: [{ title: "Player" }, { title: "ROI" }] });
+    }
+
+    // Initialize Charts
+    async function initializeCharts() {
+      const ctx1 = document.getElementById('efficiencyChart').getContext('2d');
+      new Chart(ctx1, {
+        type: 'bar',
+        data: {
+          labels: ['Team A', 'Team B', 'Team C'], // Replace with team names
+          datasets: [{
+            label: 'Efficiency (%)',
+            data: [90, 85, 70], // Replace with efficiency data
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: { responsive: true }
+      });
+
+      const ctx2 = document.getElementById('luckChart').getContext('2d');
+      new Chart(ctx2, {
+        type: 'bar',
+        data: {
+          labels: ['Team A', 'Team B', 'Team C'], // Replace with team names
+          datasets: [{
+            label: 'Luck Index',
+            data: [50, 60, 40], // Replace with luck data
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            borderWidth: 1
+          }]
+        },
+        options: { responsive: true }
+      });
+    }
+
+    // Initialize Everything
+    document.addEventListener('DOMContentLoaded', async () => {
+      await initializeTables();
+      await initializeCharts();
+    });
+  </script>
 </body>
 </html>
