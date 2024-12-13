@@ -1,158 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fantasy Football Insights</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
-  <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <title>KTBG Fantasy Football Analysis</title>
+  <!-- D3.js (v7) CDN -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Optionally use a cool Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" />
   <style>
-    /* Custom styling for the page */
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      padding: 2rem;
+      margin: 0; padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: #fafafa;
+      color: #333;
     }
-    .chart-container {
-      max-width: 700px;
-      margin: 2rem auto;
+    header, section {
+      padding: 1em;
+      max-width: 1000px;
+      margin: auto;
     }
-    table.dataTable {
+    header h1 {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+    .section-title {
+      margin: 2em 0 0.5em 0;
+      font-size: 1.5em;
+      color: #444;
+    }
+    .analysis-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      margin-bottom: 2em;
+    }
+    .analysis-box {
+      flex: 1 1 300px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      border-radius: 6px;
+      padding: 1em;
+    }
+    h2 {
+      font-size: 1.2em;
+      margin-top: 0;
+    }
+    table {
       width: 100%;
-      margin: 2rem 0;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.9em;
+    }
+    table thead {
+      background: #f0f0f0;
+    }
+    table th, table td {
+      padding: 0.5em;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    .chart {
+      width: 100%;
+      height: 300px;
+      margin: 1em 0;
+      position: relative;
+    }
+    /* Optional comedic element */
+    .tiny-dancing-banana {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 2em;
+      transform: rotate(-10deg);
+      filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+      animation: wiggle 1.2s ease-in-out infinite;
+      cursor: pointer;
+    }
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
     }
   </style>
 </head>
 <body>
-  <header class="text-center py-5">
-    <h1 class="text-4xl font-bold">Fantasy Football Insights</h1>
-    <p class="text-lg text-gray-500">Unveiling this season’s trends, luck factors, and auction steals</p>
-  </header>
 
-  <section id="tables" class="my-10">
-    <h2 class="text-2xl font-semibold mb-4">Optimal Lineup Efficiency</h2>
-    <table id="efficiencyTable" class="display"></table>
+<header>
+  <h1>KTBG Fantasy Football Analysis</h1>
+  <p style="text-align:center;">
+    Simple, clean visuals with a sprinkle of humor.
+  </p>
+</header>
 
-    <h2 class="text-2xl font-semibold mt-10 mb-4">Luck Index</h2>
-    <table id="luckTable" class="display"></table>
+<!-- Section: Optimal Lineup Efficiency -->
+<section>
+  <div class="section-title">Optimal Lineup Efficiency</div>
+  <div class="analysis-container" id="optimal-lineup-section">
+    <!-- We'll dynamically inject tables/charts here -->
+  </div>
+</section>
 
-    <h2 class="text-2xl font-semibold mt-10 mb-4">Biggest Breakouts & Values</h2>
-    <table id="breakoutsTable" class="display"></table>
-  </section>
+<!-- Section: Luck Index -->
+<section>
+  <div class="section-title">Luck Index</div>
+  <div class="analysis-container" id="luck-index-section">
+    <!-- We'll dynamically inject tables/charts here -->
+  </div>
+</section>
 
-  <section id="charts" class="my-10">
-    <h2 class="text-2xl font-semibold mb-4">Visualization of Key Insights</h2>
-    <div class="chart-container">
-      <canvas id="efficiencyChart"></canvas>
-    </div>
-    <div class="chart-container">
-      <canvas id="luckChart"></canvas>
-    </div>
-    <div class="chart-container">
-      <canvas id="breakoutsChart"></canvas>
-    </div>
-  </section>
+<!-- Section: Biggest Breakouts & Values -->
+<section>
+  <div class="section-title">Biggest Breakouts &amp; Values</div>
+  <div class="analysis-container" id="breakouts-section">
+    <!-- We'll dynamically inject tables/charts here -->
+  </div>
+</section>
 
-  <!-- Insert JavaScript Code Here -->
-  <script>
-    document.addEventListener('DOMContentLoaded', async () => {
-      try {
-        await initializeTables();
-        await initializeCharts();
-      } catch (error) {
-        console.error("Error initializing tables or charts:", error);
-      }
+<!-- Optional comedic element -->
+<div class="tiny-dancing-banana">🍌</div>
+
+<script>
+// -----------------------
+// 1) LOAD THE JSON FILES
+// -----------------------
+Promise.all([
+  d3.json('data/league_rosters.json'),
+  d3.json('data/weekly_matchups.json'),
+  d3.json('data/auction_draft_results.json')
+]).then(([rostersData, matchupsData, auctionData]) => {
+  
+  // Once loaded, we can process them
+  // rostersData is an object keyed by team name
+  // matchupsData is an object keyed by week
+  // auctionData is an array of objects for each drafted player
+
+  // Prepare data structures or helper dictionaries
+  const teamNames = Object.keys(rostersData);  // ["Naberinos", "Matt Gay", ...]
+  
+  // We'll show an approach to each analysis in simplified form,
+  // but you'll likely adapt logic as needed for deeper analysis.
+
+  // -----------------------------------------------------
+  // 2) OPTIMAL LINEUP EFFICIENCY
+  // -----------------------------------------------------
+  // Usually you'd compare a manager's actual start/sit decisions
+  // vs. the "perfect" starting lineup for that week. That requires
+  // player-level weekly scoring for each roster slot. 
+  // For now, let's just illustrate a table approach with placeholder logic.
+
+  // Create a "analysis-box" container inside #optimal-lineup-section
+  const optEffContainer = d3.select('#optimal-lineup-section')
+    .append('div')
+    .attr('class', 'analysis-box');
+  
+  optEffContainer.append('h2').text('Manager Efficiency Table');
+  
+  // We'll just create a placeholder table
+  const tableOpt = optEffContainer.append('table');
+  const theadOpt = tableOpt.append('thead').append('tr');
+  theadOpt.selectAll('th')
+    .data(['Team', 'Average Efficiency', 'Bench Blunders'])
+    .enter()
+    .append('th')
+    .text(d => d);
+  
+  const tbodyOpt = tableOpt.append('tbody');
+
+  // Here is where you would compute actual vs. possible points per team/week,
+  // then average them out. We'll do a mock approach below, just to demonstrate
+  // how the data could be inserted into the table.
+
+  let teamEfficiencyMock = teamNames.map(team => {
+    return {
+      team: team,
+      avgEfficiency: (Math.random()*100).toFixed(2) + '%',  // placeholder
+      benchBlunders: Math.floor(Math.random()*10)
+    };
+  });
+
+  const rowsOpt = tbodyOpt.selectAll('tr')
+    .data(teamEfficiencyMock)
+    .enter()
+    .append('tr');
+
+  rowsOpt.append('td').text(d => d.team);
+  rowsOpt.append('td').text(d => d.avgEfficiency);
+  rowsOpt.append('td').text(d => d.benchBlunders);
+
+  // Example: (Optional) A bar chart of efficiency
+  optEffContainer.append('div')
+    .attr('class', 'chart')
+    .attr('id', 'opt-eff-chart');  // We'll just do a simple D3 bar chart
+  
+  renderBarChart('#opt-eff-chart', teamEfficiencyMock, 'avgEfficiency', '% Efficiency');
+
+
+  // -----------------------------------------------------
+  // 3) LUCK INDEX
+  // -----------------------------------------------------
+  // The idea: measure how often a team faced above/below-average opponents.
+  
+  const luckIndexContainer = d3.select('#luck-index-section')
+    .append('div')
+    .attr('class', 'analysis-box');
+  
+  luckIndexContainer.append('h2').text('Luck Index Summary');
+
+  // Example approach: For each team, compute the average "opponent score" 
+  // they faced, and see how many times they faced an opponent's top 3 weekly
+  // score. 
+  // We'll do a simplified mock demonstration here as well.
+
+  // Collect all matchups in a single array
+  let allMatchups = [];
+  Object.keys(matchupsData).forEach(week => {
+    matchupsData[week].forEach(game => {
+      // structure: {home_team, away_team, home_score, away_score}
+      allMatchups.push(game);
     });
+  });
 
-    async function fetchData(file) {
-      try {
-        const response = await fetch(file);
-        if (!response.ok) {
-          console.error(`Failed to fetch ${file}: ${response.statusText}`);
-        }
-        return await response.json();
-      } catch (error) {
-        console.error(`Error fetching ${file}:`, error);
-      }
+  // Let's create a structure mapping teamName -> { totalOppPoints: X, games: X }
+  let luckMap = {};
+  teamNames.forEach(team => {
+    luckMap[team] = { totalOppPoints: 0, games: 0 };
+  });
+  
+  allMatchups.forEach(game => {
+    // home team faced away team's score, away team faced home team's score
+    if(luckMap[game.home_team]) {
+      luckMap[game.home_team].totalOppPoints += game.away_score;
+      luckMap[game.home_team].games += 1;
     }
-
-    async function initializeTables() {
-      const efficiencyData = await fetchData('/data/league_rosters.json');
-      const luckData = await fetchData('/data/weekly_matchups.json');
-      const breakoutsData = await fetchData('/data/auction_draft_results.json');
-
-      // Example table data for debugging
-      const exampleData = [
-        ["Team A", "1500"],
-        ["Team B", "1600"]
-      ];
-
-      $('#efficiencyTable').DataTable({
-        data: exampleData,
-        columns: [{ title: "Team" }, { title: "Points Scored" }]
-      });
-
-      $('#luckTable').DataTable({
-        data: exampleData,
-        columns: [{ title: "Team" }, { title: "Luck Index" }]
-      });
-
-      $('#breakoutsTable').DataTable({
-        data: exampleData,
-        columns: [{ title: "Player" }, { title: "ROI" }]
-      });
+    if(luckMap[game.away_team]) {
+      luckMap[game.away_team].totalOppPoints += game.home_score;
+      luckMap[game.away_team].games += 1;
     }
+  });
 
-    async function initializeCharts() {
-      // Placeholder data for charts
-      const ctx1 = document.getElementById('efficiencyChart').getContext('2d');
-      new Chart(ctx1, {
-        type: 'bar',
-        data: {
-          labels: ['Team A', 'Team B'],
-          datasets: [{
-            label: 'Efficiency (%)',
-            data: [90, 85],
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1
-          }]
-        }
-      });
+  let luckArray = [];
+  teamNames.forEach(team => {
+    let avgOppScore = luckMap[team].games > 0 ? 
+        (luckMap[team].totalOppPoints / luckMap[team].games).toFixed(2) : 0;
+    luckArray.push({
+      team: team,
+      avgOppScore: avgOppScore
+    });
+  });
 
-      const ctx2 = document.getElementById('luckChart').getContext('2d');
-      new Chart(ctx2, {
-        type: 'bar',
-        data: {
-          labels: ['Team A', 'Team B'],
-          datasets: [{
-            label: 'Luck Index',
-            data: [50, 60],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
-            borderWidth: 1
-          }]
-        }
-      });
+  // Sort descending by avgOppScore so we can see who faced the toughest opponents
+  luckArray.sort((a,b) => b.avgOppScore - a.avgOppScore);
 
-      const ctx3 = document.getElementById('breakoutsChart').getContext('2d');
-      new Chart(ctx3, {
-        type: 'bar',
-        data: {
-          labels: ['Player A', 'Player B'],
-          datasets: [{
-            label: 'ROI',
-            data: [5.0, 4.2],
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgba(54, 162, 235, 1)',
-            borderWidth: 1
-          }]
-        }
-      });
+  // Table:
+  const tableLuck = luckIndexContainer.append('table');
+  const theadLuck = tableLuck.append('thead').append('tr');
+  theadLuck.selectAll('th')
+    .data(['Team', 'Avg Opponent Score'])
+    .enter()
+    .append('th')
+    .text(d => d);
+  const tbodyLuck = tableLuck.append('tbody');
+  
+  const rowsLuck = tbodyLuck.selectAll('tr')
+    .data(luckArray)
+    .enter()
+    .append('tr');
+  
+  rowsLuck.append('td').text(d => d.team);
+  rowsLuck.append('td').text(d => d.avgOppScore);
+
+  // A bar chart for luck index
+  luckIndexContainer.append('div')
+    .attr('class', 'chart')
+    .attr('id', 'luck-chart');
+  
+  renderBarChart('#luck-chart', luckArray, 'avgOppScore', 'Avg Opponent Score');
+
+
+  // -----------------------------------------------------
+  // 4) BIGGEST BREAKOUTS & VALUES
+  // -----------------------------------------------------
+  // A quick demonstration of comparing Auction Draft Cost vs actual fantasy performance.
+  // For a more robust approach, you'd need weekly fantasy points by player. 
+  // We'll simply mock "season points" as random, then ROI = (points / cost).
+  
+  const breakoutsContainer = d3.select('#breakouts-section')
+    .append('div')
+    .attr('class', 'analysis-box');
+
+  breakoutsContainer.append('h2').text('Top 10 Auction Steals (ROI)');
+
+  // Let's pretend we have "seasonPoints" from the weekly data. 
+  // We'll do a random approach just for demonstration.
+
+  let playersWithROI = auctionData.map(p => {
+    // random season points for demonstration
+    let seasonPoints = Math.random()*200 + 50; // 50 to 250 range
+    let cost = p.bid_amount;
+    let roi = seasonPoints / (cost === 0 ? 1 : cost); // handle cost=0 edge
+    return {
+      player: p.player,
+      team: p.winning_team,
+      cost: cost,
+      seasonPoints: seasonPoints,
+      ROI: roi
+    };
+  });
+  
+  // Sort descending by ROI to find top 10 'steals'
+  playersWithROI.sort((a,b) => b.ROI - a.ROI);
+  let top10 = playersWithROI.slice(0, 10);
+  
+  // Create table
+  const tableBreakouts = breakoutsContainer.append('table');
+  const theadBreakouts = tableBreakouts.append('thead').append('tr');
+  theadBreakouts.selectAll('th')
+    .data(['Player', 'Team', 'Cost', 'Season Points (approx)', 'ROI'])
+    .enter()
+    .append('th')
+    .text(d => d);
+  const tbodyBreakouts = tableBreakouts.append('tbody');
+  
+  const rowsBreakouts = tbodyBreakouts.selectAll('tr')
+    .data(top10)
+    .enter()
+    .append('tr');
+  
+  rowsBreakouts.append('td').text(d => d.player);
+  rowsBreakouts.append('td').text(d => d.team);
+  rowsBreakouts.append('td').text(d => d.cost);
+  rowsBreakouts.append('td').text(d => d.seasonPoints.toFixed(1));
+  rowsBreakouts.append('td').text(d => d.ROI.toFixed(2));
+
+
+  // Example bar chart: ROI
+  breakoutsContainer.append('div')
+    .attr('class', 'chart')
+    .attr('id', 'roi-chart');
+  
+  renderBarChart('#roi-chart', top10, 'ROI', 'ROI');
+
+}).catch(err => {
+  console.error("Error loading JSON files:", err);
+});
+
+
+// -----------------------------------------------------
+// HELPER FUNCTION: Simple Bar Chart with D3
+// -----------------------------------------------------
+function renderBarChart(selector, data, valueKey, label) {
+  const chartEl = document.querySelector(selector);
+  if (!chartEl) return;
+
+  const margin = {top: 20, right: 20, bottom: 40, left: 60};
+  const width = chartEl.clientWidth - margin.left - margin.right;
+  const height = chartEl.clientHeight - margin.top - margin.bottom;
+  
+  const svg = d3.select(selector)
+    .append('svg')
+    .attr('width', chartEl.clientWidth)
+    .attr('height', chartEl.clientHeight);
+  
+  const g = svg.append('g')
+    .attr('transform', `translate(${margin.left},${margin.top})`);
+  
+  const x = d3.scaleBand()
+    .range([0, width])
+    .padding(0.2)
+    .domain(data.map(d => d.team || d.player || 'Unknown'));
+  
+  // We need numeric values
+  // If the data is a string with '%', let's parse or just handle numeric
+  const parseValue = d => {
+    if (typeof d[valueKey] === 'string' && d[valueKey].includes('%')) {
+      return +d[valueKey].replace('%',''); 
     }
-  </script>
+    return +d[valueKey];
+  };
+
+  const y = d3.scaleLinear()
+    .range([height, 0])
+    .domain([0, d3.max(data, parseValue) * 1.1]); // add 10% headroom
+  
+  // x axis
+  g.append('g')
+   .attr('transform', `translate(0, ${height})`)
+   .call(d3.axisBottom(x).tickSize(0))
+   .selectAll('text')
+   .attr('dy', '1em')
+   .attr('dx', '-0.8em')
+   .attr('transform', 'rotate(-45)')
+   .style('text-anchor', 'end');
+  
+  // y axis
+  g.append('g')
+   .call(d3.axisLeft(y));
+
+  // bars
+  g.selectAll('.bar')
+   .data(data)
+   .enter()
+   .append('rect')
+   .attr('class', 'bar')
+   .attr('x', d => x(d.team || d.player))
+   .attr('width', x.bandwidth())
+   .attr('y', d => y(parseValue(d)))
+   .attr('height', d => height - y(parseValue(d)))
+   .attr('fill', '#74b9ff');
+
+  // label
+  g.append('text')
+    .attr('x', -(height/2))
+    .attr('y', -margin.left+15)
+    .attr('transform', 'rotate(-90)')
+    .style('text-anchor', 'middle')
+    .text(label);
+}
+</script>
+
 </body>
 </html>
