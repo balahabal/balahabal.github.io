@@ -10,10 +10,10 @@
   <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
+    /* Custom styling for the page */
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f9f9f9;
-      color: #333;
       padding: 2rem;
     }
     .chart-container {
@@ -32,7 +32,6 @@
     <p class="text-lg text-gray-500">Unveiling this season’s trends, luck factors, and auction steals</p>
   </header>
 
-  <!-- Tables -->
   <section id="tables" class="my-10">
     <h2 class="text-2xl font-semibold mb-4">Optimal Lineup Efficiency</h2>
     <table id="efficiencyTable" class="display"></table>
@@ -44,7 +43,6 @@
     <table id="breakoutsTable" class="display"></table>
   </section>
 
-  <!-- Charts -->
   <section id="charts" class="my-10">
     <h2 class="text-2xl font-semibold mb-4">Visualization of Key Insights</h2>
     <div class="chart-container">
@@ -58,65 +56,103 @@
     </div>
   </section>
 
+  <!-- Insert JavaScript Code Here -->
   <script>
-    // Load JSON data
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        await initializeTables();
+        await initializeCharts();
+      } catch (error) {
+        console.error("Error initializing tables or charts:", error);
+      }
+    });
+
     async function fetchData(file) {
-      const response = await fetch(file);
-      return response.json();
+      try {
+        const response = await fetch(file);
+        if (!response.ok) {
+          console.error(`Failed to fetch ${file}: ${response.statusText}`);
+        }
+        return await response.json();
+      } catch (error) {
+        console.error(`Error fetching ${file}:`, error);
+      }
     }
 
-    // Initialize DataTables
     async function initializeTables() {
-      const efficiencyData = await fetchData('data/league_rosters.json');
-      const luckData = await fetchData('data/weekly_matchups.json');
-      const breakoutsData = await fetchData('data/auction_draft_results.json');
+      const efficiencyData = await fetchData('/data/league_rosters.json');
+      const luckData = await fetchData('/data/weekly_matchups.json');
+      const breakoutsData = await fetchData('/data/auction_draft_results.json');
 
-      // Populate tables (replace these with processed data)
-      $('#efficiencyTable').DataTable({ data: efficiencyData, columns: [{ title: "Team" }, { title: "Points Scored" }] });
-      $('#luckTable').DataTable({ data: luckData, columns: [{ title: "Team" }, { title: "Luck Index" }] });
-      $('#breakoutsTable').DataTable({ data: breakoutsData, columns: [{ title: "Player" }, { title: "ROI" }] });
+      // Example table data for debugging
+      const exampleData = [
+        ["Team A", "1500"],
+        ["Team B", "1600"]
+      ];
+
+      $('#efficiencyTable').DataTable({
+        data: exampleData,
+        columns: [{ title: "Team" }, { title: "Points Scored" }]
+      });
+
+      $('#luckTable').DataTable({
+        data: exampleData,
+        columns: [{ title: "Team" }, { title: "Luck Index" }]
+      });
+
+      $('#breakoutsTable').DataTable({
+        data: exampleData,
+        columns: [{ title: "Player" }, { title: "ROI" }]
+      });
     }
 
-    // Initialize Charts
     async function initializeCharts() {
+      // Placeholder data for charts
       const ctx1 = document.getElementById('efficiencyChart').getContext('2d');
       new Chart(ctx1, {
         type: 'bar',
         data: {
-          labels: ['Team A', 'Team B', 'Team C'], // Replace with team names
+          labels: ['Team A', 'Team B'],
           datasets: [{
             label: 'Efficiency (%)',
-            data: [90, 85, 70], // Replace with efficiency data
+            data: [90, 85],
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
             borderColor: 'rgba(75, 192, 192, 1)',
             borderWidth: 1
           }]
-        },
-        options: { responsive: true }
+        }
       });
 
       const ctx2 = document.getElementById('luckChart').getContext('2d');
       new Chart(ctx2, {
         type: 'bar',
         data: {
-          labels: ['Team A', 'Team B', 'Team C'], // Replace with team names
+          labels: ['Team A', 'Team B'],
           datasets: [{
             label: 'Luck Index',
-            data: [50, 60, 40], // Replace with luck data
+            data: [50, 60],
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgba(255, 99, 132, 1)',
             borderWidth: 1
           }]
-        },
-        options: { responsive: true }
+        }
+      });
+
+      const ctx3 = document.getElementById('breakoutsChart').getContext('2d');
+      new Chart(ctx3, {
+        type: 'bar',
+        data: {
+          labels: ['Player A', 'Player B'],
+          datasets: [{
+            label: 'ROI',
+            data: [5.0, 4.2],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
+          }]
+        }
       });
     }
-
-    // Initialize Everything
-    document.addEventListener('DOMContentLoaded', async () => {
-      await initializeTables();
-      await initializeCharts();
-    });
   </script>
 </body>
 </html>
