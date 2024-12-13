@@ -1,0 +1,567 @@
+{
+    "Week 1": [
+        {
+            "home_team": "Kupp of Amon-Ra",
+            "away_team": "Naberinos",
+            "home_score": 84.25,
+            "away_score": 133.3
+        },
+        {
+            "home_team": "Arby's ",
+            "away_team": "La Porta Potty",
+            "home_score": 115.15,
+            "away_score": 119.75
+        },
+        {
+            "home_team": "Team Science",
+            "away_team": "Keenan Allen's Landing",
+            "home_score": 118.25,
+            "away_score": 113.6
+        },
+        {
+            "home_team": "Matt Gay",
+            "away_team": "Fayetteville Furries",
+            "home_score": 128.5,
+            "away_score": 103.35
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Sasquatch Borkley ",
+            "home_score": 82.65,
+            "away_score": 100.7
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "Footprints Bomb Pop",
+            "home_score": 98.45,
+            "away_score": 91.2
+        }
+    ],
+    "Week 2": [
+        {
+            "home_team": "Naberinos",
+            "away_team": "La Porta Potty",
+            "home_score": 142.0,
+            "away_score": 132.9
+        },
+        {
+            "home_team": "Keenan Allen's Landing",
+            "away_team": "Kupp of Amon-Ra",
+            "home_score": 98.1,
+            "away_score": 111.7
+        },
+        {
+            "home_team": "Team Science",
+            "away_team": "Arby's ",
+            "home_score": 110.0,
+            "away_score": 116.7
+        },
+        {
+            "home_team": "Fayetteville Furries",
+            "away_team": "Sasquatch Borkley ",
+            "home_score": 141.5,
+            "away_score": 110.8
+        },
+        {
+            "home_team": "Footprints Bomb Pop",
+            "away_team": "Matt Gay",
+            "home_score": 101.95,
+            "away_score": 109.35
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "Bijan Dijon Mustardson",
+            "home_score": 99.9,
+            "away_score": 102.5
+        }
+    ],
+    "Week 3": [
+        {
+            "home_team": "Keenan Allen's Landing",
+            "away_team": "Naberinos",
+            "home_score": 85.35,
+            "away_score": 99.8
+        },
+        {
+            "home_team": "La Porta Potty",
+            "away_team": "Team Science",
+            "home_score": 133.65,
+            "away_score": 104.7
+        },
+        {
+            "home_team": "Kupp of Amon-Ra",
+            "away_team": "Arby's ",
+            "home_score": 119.8,
+            "away_score": 97.95
+        },
+        {
+            "home_team": "Footprints Bomb Pop",
+            "away_team": "Fayetteville Furries",
+            "home_score": 103.5,
+            "away_score": 81.85
+        },
+        {
+            "home_team": "Sasquatch Borkley ",
+            "away_team": "Chubby Chasers",
+            "home_score": 112.2,
+            "away_score": 140.4
+        },
+        {
+            "home_team": "Matt Gay",
+            "away_team": "Bijan Dijon Mustardson",
+            "home_score": 101.75,
+            "away_score": 112.65
+        }
+    ],
+    "Week 4": [
+        {
+            "home_team": "Naberinos",
+            "away_team": "Team Science",
+            "home_score": 113.2,
+            "away_score": 92.5
+        },
+        {
+            "home_team": "Arby's ",
+            "away_team": "Keenan Allen's Landing",
+            "home_score": 145.85,
+            "away_score": 106.45
+        },
+        {
+            "home_team": "Kupp of Amon-Ra",
+            "away_team": "La Porta Potty",
+            "home_score": 125.7,
+            "away_score": 113.8
+        },
+        {
+            "home_team": "Fayetteville Furries",
+            "away_team": "Chubby Chasers",
+            "home_score": 100.95,
+            "away_score": 107.65
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Footprints Bomb Pop",
+            "home_score": 149.15,
+            "away_score": 85.9
+        },
+        {
+            "home_team": "Matt Gay",
+            "away_team": "Sasquatch Borkley ",
+            "home_score": 111.75,
+            "away_score": 82.15
+        }
+    ],
+    "Week 5": [
+        {
+            "home_team": "Arby's ",
+            "away_team": "Naberinos",
+            "home_score": 131.4,
+            "away_score": 130.35
+        },
+        {
+            "home_team": "Team Science",
+            "away_team": "Kupp of Amon-Ra",
+            "home_score": 104.95,
+            "away_score": 126.65
+        },
+        {
+            "home_team": "Keenan Allen's Landing",
+            "away_team": "La Porta Potty",
+            "home_score": 152.1,
+            "away_score": 91.9
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Fayetteville Furries",
+            "home_score": 127.5,
+            "away_score": 103.55
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "Matt Gay",
+            "home_score": 105.9,
+            "away_score": 76.85
+        },
+        {
+            "home_team": "Footprints Bomb Pop",
+            "away_team": "Sasquatch Borkley ",
+            "home_score": 132.95,
+            "away_score": 100.65
+        }
+    ],
+    "Week 6": [
+        {
+            "home_team": "Naberinos",
+            "away_team": "Fayetteville Furries",
+            "home_score": 121.6,
+            "away_score": 104.8
+        },
+        {
+            "home_team": "Kupp of Amon-Ra",
+            "away_team": "Matt Gay",
+            "home_score": 104.4,
+            "away_score": 113.6
+        },
+        {
+            "home_team": "La Porta Potty",
+            "away_team": "Sasquatch Borkley ",
+            "home_score": 128.55,
+            "away_score": 83.35
+        },
+        {
+            "home_team": "Keenan Allen's Landing",
+            "away_team": "Footprints Bomb Pop",
+            "home_score": 121.15,
+            "away_score": 118.7
+        },
+        {
+            "home_team": "Team Science",
+            "away_team": "Chubby Chasers",
+            "home_score": 105.35,
+            "away_score": 71.25
+        },
+        {
+            "home_team": "Arby's ",
+            "away_team": "Bijan Dijon Mustardson",
+            "home_score": 148.7,
+            "away_score": 134.6
+        }
+    ],
+    "Week 7": [
+        {
+            "home_team": "Fayetteville Furries",
+            "away_team": "Kupp of Amon-Ra",
+            "home_score": 120.8,
+            "away_score": 123.25
+        },
+        {
+            "home_team": "Matt Gay",
+            "away_team": "La Porta Potty",
+            "home_score": 88.65,
+            "away_score": 88.6
+        },
+        {
+            "home_team": "Sasquatch Borkley ",
+            "away_team": "Keenan Allen's Landing",
+            "home_score": 126.45,
+            "away_score": 104.65
+        },
+        {
+            "home_team": "Footprints Bomb Pop",
+            "away_team": "Team Science",
+            "home_score": 85.3,
+            "away_score": 111.65
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "Arby's ",
+            "home_score": 69.55,
+            "away_score": 128.9
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Naberinos",
+            "home_score": 151.9,
+            "away_score": 123.45
+        }
+    ],
+    "Week 8": [
+        {
+            "home_team": "La Porta Potty",
+            "away_team": "Fayetteville Furries",
+            "home_score": 126.55,
+            "away_score": 117.9
+        },
+        {
+            "home_team": "Keenan Allen's Landing",
+            "away_team": "Matt Gay",
+            "home_score": 100.7,
+            "away_score": 105.2
+        },
+        {
+            "home_team": "Team Science",
+            "away_team": "Sasquatch Borkley ",
+            "home_score": 126.05,
+            "away_score": 85.7
+        },
+        {
+            "home_team": "Arby's ",
+            "away_team": "Footprints Bomb Pop",
+            "home_score": 133.25,
+            "away_score": 108.5
+        },
+        {
+            "home_team": "Naberinos",
+            "away_team": "Chubby Chasers",
+            "home_score": 134.6,
+            "away_score": 144.45
+        },
+        {
+            "home_team": "Kupp of Amon-Ra",
+            "away_team": "Bijan Dijon Mustardson",
+            "home_score": 152.0,
+            "away_score": 114.15
+        }
+    ],
+    "Week 9": [
+        {
+            "home_team": "Fayetteville Furries",
+            "away_team": "La Porta Potty",
+            "home_score": 112.25,
+            "away_score": 121.5
+        },
+        {
+            "home_team": "Matt Gay",
+            "away_team": "Keenan Allen's Landing",
+            "home_score": 78.4,
+            "away_score": 132.35
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Team Science",
+            "home_score": 125.0,
+            "away_score": 98.9
+        },
+        {
+            "home_team": "Footprints Bomb Pop",
+            "away_team": "Arby's ",
+            "home_score": 108.8,
+            "away_score": 122.45
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "Kupp of Amon-Ra",
+            "home_score": 120.65,
+            "away_score": 123.75
+        },
+        {
+            "home_team": "Sasquatch Borkley ",
+            "away_team": "Naberinos",
+            "home_score": 135.25,
+            "away_score": 160.75
+        }
+    ],
+    "Week 10": [
+        {
+            "home_team": "Keenan Allen's Landing",
+            "away_team": "Fayetteville Furries",
+            "home_score": 133.15,
+            "away_score": 88.3
+        },
+        {
+            "home_team": "Team Science",
+            "away_team": "Matt Gay",
+            "home_score": 141.0,
+            "away_score": 118.05
+        },
+        {
+            "home_team": "Arby's ",
+            "away_team": "Bijan Dijon Mustardson",
+            "home_score": 89.15,
+            "away_score": 105.15
+        },
+        {
+            "home_team": "Kupp of Amon-Ra",
+            "away_team": "Footprints Bomb Pop",
+            "home_score": 107.3,
+            "away_score": 105.0
+        },
+        {
+            "home_team": "Naberinos",
+            "away_team": "Chubby Chasers",
+            "home_score": 79.7,
+            "away_score": 76.3
+        },
+        {
+            "home_team": "La Porta Potty",
+            "away_team": "Sasquatch Borkley ",
+            "home_score": 85.0,
+            "away_score": 55.6
+        }
+    ],
+    "Week 11": [
+        {
+            "home_team": "Fayetteville Furries",
+            "away_team": "Team Science",
+            "home_score": 93.55,
+            "away_score": 118.15
+        },
+        {
+            "home_team": "Matt Gay",
+            "away_team": "Arby's ",
+            "home_score": 155.75,
+            "away_score": 130.15
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Kupp of Amon-Ra",
+            "home_score": 95.35,
+            "away_score": 188.7
+        },
+        {
+            "home_team": "Footprints Bomb Pop",
+            "away_team": "Naberinos",
+            "home_score": 67.1,
+            "away_score": 156.75
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "La Porta Potty",
+            "home_score": 79.15,
+            "away_score": 123.85
+        },
+        {
+            "home_team": "Sasquatch Borkley ",
+            "away_team": "Keenan Allen's Landing",
+            "home_score": 94.15,
+            "away_score": 92.9
+        }
+    ],
+    "Week 12": [
+        {
+            "home_team": "Fayetteville Furries",
+            "away_team": "Arby's ",
+            "home_score": 83.05,
+            "away_score": 156.6
+        },
+        {
+            "home_team": "Matt Gay",
+            "away_team": "Kupp of Amon-Ra",
+            "home_score": 158.85,
+            "away_score": 115.25
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Naberinos",
+            "home_score": 97.4,
+            "away_score": 119.55
+        },
+        {
+            "home_team": "Footprints Bomb Pop",
+            "away_team": "La Porta Potty",
+            "home_score": 148.75,
+            "away_score": 105.95
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "Keenan Allen's Landing",
+            "home_score": 89.05,
+            "away_score": 94.15
+        },
+        {
+            "home_team": "Sasquatch Borkley ",
+            "away_team": "Team Science",
+            "home_score": 78.8,
+            "away_score": 84.8
+        }
+    ],
+    "Week 13": [
+        {
+            "home_team": "Kupp of Amon-Ra",
+            "away_team": "Fayetteville Furries",
+            "home_score": 100.6,
+            "away_score": 82.35
+        },
+        {
+            "home_team": "Naberinos",
+            "away_team": "Matt Gay",
+            "home_score": 142.75,
+            "away_score": 121.65
+        },
+        {
+            "home_team": "La Porta Potty",
+            "away_team": "Bijan Dijon Mustardson",
+            "home_score": 161.75,
+            "away_score": 144.8
+        },
+        {
+            "home_team": "Keenan Allen's Landing",
+            "away_team": "Footprints Bomb Pop",
+            "home_score": 141.05,
+            "away_score": 107.5
+        },
+        {
+            "home_team": "Team Science",
+            "away_team": "Chubby Chasers",
+            "home_score": 110.6,
+            "away_score": 89.65
+        },
+        {
+            "home_team": "Arby's ",
+            "away_team": "Sasquatch Borkley ",
+            "home_score": 113.25,
+            "away_score": 70.55
+        }
+    ],
+    "Week 14": [
+        {
+            "home_team": "Fayetteville Furries",
+            "away_team": "Naberinos",
+            "home_score": 129.1,
+            "away_score": 157.3
+        },
+        {
+            "home_team": "Matt Gay",
+            "away_team": "La Porta Potty",
+            "home_score": 120.55,
+            "away_score": 142.65
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Keenan Allen's Landing",
+            "home_score": 103.25,
+            "away_score": 108.5
+        },
+        {
+            "home_team": "Footprints Bomb Pop",
+            "away_team": "Team Science",
+            "home_score": 114.85,
+            "away_score": 148.65
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "Arby's ",
+            "home_score": 92.95,
+            "away_score": 119.7
+        },
+        {
+            "home_team": "Sasquatch Borkley ",
+            "away_team": "Kupp of Amon-Ra",
+            "home_score": 81.9,
+            "away_score": 140.65
+        }
+    ],
+    "Week 15": [
+        {
+            "home_team": "Arby's ",
+            "away_team": "La Porta Potty",
+            "home_score": 0.0,
+            "away_score": 0.0
+        },
+        {
+            "home_team": "Kupp of Amon-Ra",
+            "away_team": "Team Science",
+            "home_score": 0.0,
+            "away_score": 0.0
+        },
+        {
+            "home_team": "Bijan Dijon Mustardson",
+            "away_team": "Keenan Allen's Landing",
+            "home_score": 0.0,
+            "away_score": 0.0
+        },
+        {
+            "home_team": "Chubby Chasers",
+            "away_team": "Footprints Bomb Pop",
+            "home_score": 0.0,
+            "away_score": 0.0
+        },
+        {
+            "home_team": "Sasquatch Borkley ",
+            "away_team": "Fayetteville Furries",
+            "home_score": 0.0,
+            "away_score": 0.0
+        }
+    ]
+
+}

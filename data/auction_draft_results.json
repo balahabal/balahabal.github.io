@@ -1,0 +1,902 @@
+[
+    {
+        "player": "Christian McCaffrey",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 69
+    },
+    {
+        "player": "Amon-Ra St. Brown",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 62
+    },
+    {
+        "player": "Kyren Williams",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 48
+    },
+    {
+        "player": "Bijan Robinson",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 73
+    },
+    {
+        "player": "Justin Tucker",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 6
+    },
+    {
+        "player": "C.J. Stroud",
+        "winning_team": "Team Science",
+        "bid_amount": 21
+    },
+    {
+        "player": "Nico Collins",
+        "winning_team": "Matt Gay",
+        "bid_amount": 36
+    },
+    {
+        "player": "Ja'Marr Chase",
+        "winning_team": "Team Science",
+        "bid_amount": 58
+    },
+    {
+        "player": "Saquon Barkley",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 61
+    },
+    {
+        "player": "Breece Hall",
+        "winning_team": "Team Science",
+        "bid_amount": 61
+    },
+    {
+        "player": "CeeDee Lamb",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 60
+    },
+    {
+        "player": "Deebo Samuel Sr.",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 29
+    },
+    {
+        "player": "Justin Jefferson",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 61
+    },
+    {
+        "player": "James Cook",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 31
+    },
+    {
+        "player": "Patrick Mahomes",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 26
+    },
+    {
+        "player": "Tyreek Hill",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 64
+    },
+    {
+        "player": "Jonathan Taylor",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 56
+    },
+    {
+        "player": "Chris Olave",
+        "winning_team": "Matt Gay",
+        "bid_amount": 44
+    },
+    {
+        "player": "Isiah Pacheco",
+        "winning_team": "Matt Gay",
+        "bid_amount": 46
+    },
+    {
+        "player": "Puka Nacua",
+        "winning_team": "Matt Gay",
+        "bid_amount": 45
+    },
+    {
+        "player": "Trey Benson",
+        "winning_team": "Naberinos",
+        "bid_amount": 3
+    },
+    {
+        "player": "A.J. Brown",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 46
+    },
+    {
+        "player": "Garrett Wilson",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 50
+    },
+    {
+        "player": "George Kittle",
+        "winning_team": "Arby's ",
+        "bid_amount": 11
+    },
+    {
+        "player": "Joe Mixon",
+        "winning_team": "Arby's ",
+        "bid_amount": 35
+    },
+    {
+        "player": "Jahmyr Gibbs",
+        "winning_team": "Naberinos",
+        "bid_amount": 50
+    },
+    {
+        "player": "Rachaad White",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 35
+    },
+    {
+        "player": "Travis Etienne Jr.",
+        "winning_team": "Arby's ",
+        "bid_amount": 50
+    },
+    {
+        "player": "Davante Adams",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 39
+    },
+    {
+        "player": "Stefon Diggs",
+        "winning_team": "Arby's ",
+        "bid_amount": 25
+    },
+    {
+        "player": "Mike Evans",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 36
+    },
+    {
+        "player": "Travis Kelce",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 30
+    },
+    {
+        "player": "Marvin Harrison Jr.",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 40
+    },
+    {
+        "player": "Michael Pittman Jr.",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 36
+    },
+    {
+        "player": "Drake London",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 34
+    },
+    {
+        "player": "Ezekiel Elliott",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 5
+    },
+    {
+        "player": "Derrick Henry",
+        "winning_team": "Arby's ",
+        "bid_amount": 38
+    },
+    {
+        "player": "Josh Allen",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 28
+    },
+    {
+        "player": "Lamar Jackson",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 19
+    },
+    {
+        "player": "Malik Nabers",
+        "winning_team": "Naberinos",
+        "bid_amount": 33
+    },
+    {
+        "player": "Alvin Kamara",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 35
+    },
+    {
+        "player": "Josh Jacobs",
+        "winning_team": "Arby's ",
+        "bid_amount": 29
+    },
+    {
+        "player": "DK Metcalf",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 32
+    },
+    {
+        "player": "Cooper Kupp",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 21
+    },
+    {
+        "player": "Kenneth Walker III",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 26
+    },
+    {
+        "player": "DJ Moore",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 28
+    },
+    {
+        "player": "Brandon Aiyuk",
+        "winning_team": "Naberinos",
+        "bid_amount": 31
+    },
+    {
+        "player": "T.J. Hockenson",
+        "winning_team": "Team Science",
+        "bid_amount": 2
+    },
+    {
+        "player": "De'Von Achane",
+        "winning_team": "Naberinos",
+        "bid_amount": 33
+    },
+    {
+        "player": "Jalen Hurts",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 27
+    },
+    {
+        "player": "49ers D/ST",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 2
+    },
+    {
+        "player": "Sam LaPorta",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 24
+    },
+    {
+        "player": "Tank Dell",
+        "winning_team": "Naberinos",
+        "bid_amount": 20
+    },
+    {
+        "player": "DeVonta Smith",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 22
+    },
+    {
+        "player": "Jaylen Waddle",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 22
+    },
+    {
+        "player": "Mark Andrews",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 15
+    },
+    {
+        "player": "Rhamondre Stevenson",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 16
+    },
+    {
+        "player": "Calvin Ridley",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 15
+    },
+    {
+        "player": "Zay Flowers",
+        "winning_team": "Team Science",
+        "bid_amount": 18
+    },
+    {
+        "player": "Chris Godwin",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 15
+    },
+    {
+        "player": "David Montgomery",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 10
+    },
+    {
+        "player": "Anthony Richardson",
+        "winning_team": "Matt Gay",
+        "bid_amount": 11
+    },
+    {
+        "player": "Joe Burrow",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 10
+    },
+    {
+        "player": "D'Andre Swift",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 9
+    },
+    {
+        "player": "Jonathon Brooks",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 5
+    },
+    {
+        "player": "Tony Pollard",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 5
+    },
+    {
+        "player": "George Pickens",
+        "winning_team": "Team Science",
+        "bid_amount": 13
+    },
+    {
+        "player": "James Conner",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 7
+    },
+    {
+        "player": "Tee Higgins",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 18
+    },
+    {
+        "player": "Amari Cooper",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 10
+    },
+    {
+        "player": "Trey McBride",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 11
+    },
+    {
+        "player": "Aaron Jones",
+        "winning_team": "Matt Gay",
+        "bid_amount": 7
+    },
+    {
+        "player": "Zamir White",
+        "winning_team": "Team Science",
+        "bid_amount": 13
+    },
+    {
+        "player": "Dak Prescott",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 9
+    },
+    {
+        "player": "Brian Robinson Jr.",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 5
+    },
+    {
+        "player": "Evan Engram",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 8
+    },
+    {
+        "player": "Diontae Johnson",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 6
+    },
+    {
+        "player": "Terry McLaurin",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 8
+    },
+    {
+        "player": "Jaxon Smith-Njigba",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 4
+    },
+    {
+        "player": "Keenan Allen",
+        "winning_team": "Team Science",
+        "bid_amount": 6
+    },
+    {
+        "player": "Rashee Rice",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 5
+    },
+    {
+        "player": "Dalton Kincaid",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 4
+    },
+    {
+        "player": "Christian Kirk",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 4
+    },
+    {
+        "player": "Jake Ferguson",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 1
+    },
+    {
+        "player": "Ravens D/ST",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 1
+    },
+    {
+        "player": "Kyler Murray",
+        "winning_team": "Naberinos",
+        "bid_amount": 6
+    },
+    {
+        "player": "Najee Harris",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 11
+    },
+    {
+        "player": "Javonte Williams",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 3
+    },
+    {
+        "player": "Kyle Pitts",
+        "winning_team": "Naberinos",
+        "bid_amount": 4
+    },
+    {
+        "player": "Xavier Worthy",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 3
+    },
+    {
+        "player": "Courtland Sutton",
+        "winning_team": "Matt Gay",
+        "bid_amount": 2
+    },
+    {
+        "player": "Christian Watson",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 4
+    },
+    {
+        "player": "Jaylen Warren",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 4
+    },
+    {
+        "player": "Jordan Love",
+        "winning_team": "Matt Gay",
+        "bid_amount": 2
+    },
+    {
+        "player": "David Njoku",
+        "winning_team": "Team Science",
+        "bid_amount": 2
+    },
+    {
+        "player": "Austin Ekeler",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 3
+    },
+    {
+        "player": "Rico Dowdle",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jayden Reed",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 2
+    },
+    {
+        "player": "Jayden Daniels",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jordan Addison",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 3
+    },
+    {
+        "player": "Rome Odunze",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 1
+    },
+    {
+        "player": "Raheem Mostert",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 3
+    },
+    {
+        "player": "Brock Purdy",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 2
+    },
+    {
+        "player": "Jerome Ford",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 2
+    },
+    {
+        "player": "Tyjae Spears",
+        "winning_team": "Naberinos",
+        "bid_amount": 5
+    },
+    {
+        "player": "Aaron Rodgers",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 2
+    },
+    {
+        "player": "Dallas Goedert",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 2
+    },
+    {
+        "player": "Ladd McConkey",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 1
+    },
+    {
+        "player": "Brock Bowers",
+        "winning_team": "Naberinos",
+        "bid_amount": 2
+    },
+    {
+        "player": "Devin Singletary",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 2
+    },
+    {
+        "player": "Chase Brown",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 1
+    },
+    {
+        "player": "Keon Coleman",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 2
+    },
+    {
+        "player": "Browns D/ST",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 1
+    },
+    {
+        "player": "DeAndre Hopkins",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jakobi Meyers",
+        "winning_team": "Arby's ",
+        "bid_amount": 3
+    },
+    {
+        "player": "Brian Thomas Jr.",
+        "winning_team": "Naberinos",
+        "bid_amount": 1
+    },
+    {
+        "player": "Mike Williams",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Justin Herbert",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 1
+    },
+    {
+        "player": "Zack Moss",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 2
+    },
+    {
+        "player": "Tyler Lockett",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 1
+    },
+    {
+        "player": "Pat Freiermuth",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 1
+    },
+    {
+        "player": "Hollywood Brown",
+        "winning_team": "Team Science",
+        "bid_amount": 1
+    },
+    {
+        "player": "Caleb Williams",
+        "winning_team": "Naberinos",
+        "bid_amount": 2
+    },
+    {
+        "player": "J.K. Dobbins",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 1
+    },
+    {
+        "player": "Harrison Butker",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 2
+    },
+    {
+        "player": "Tua Tagovailoa",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 1
+    },
+    {
+        "player": "Trevor Lawrence",
+        "winning_team": "Arby's ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Cowboys D/ST",
+        "winning_team": "Naberinos",
+        "bid_amount": 1
+    },
+    {
+        "player": "Gus Edwards",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Chuba Hubbard",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 1
+    },
+    {
+        "player": "Dalton Schultz",
+        "winning_team": "Matt Gay",
+        "bid_amount": 1
+    },
+    {
+        "player": "Kirk Cousins",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 1
+    },
+    {
+        "player": "Nick Chubb",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 1
+    },
+    {
+        "player": "Darnell Mooney",
+        "winning_team": "Team Science",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jared Goff",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 1
+    },
+    {
+        "player": "Zach Charbonnet",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 1
+    },
+    {
+        "player": "Brandon Aubrey",
+        "winning_team": "Naberinos",
+        "bid_amount": 2
+    },
+    {
+        "player": "Jets D/ST",
+        "winning_team": "Chubby Chasers",
+        "bid_amount": 14
+    },
+    {
+        "player": "Younghoe Koo",
+        "winning_team": "Arby's ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jameson Williams",
+        "winning_team": "Naberinos",
+        "bid_amount": 1
+    },
+    {
+        "player": "Tyler Allgeier",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Ty Chandler",
+        "winning_team": "Bijan Dijon Mustardson",
+        "bid_amount": 2
+    },
+    {
+        "player": "Jerry Jeudy",
+        "winning_team": "Matt Gay",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jake Elliott",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 1
+    },
+    {
+        "player": "Antonio Gibson",
+        "winning_team": "Team Science",
+        "bid_amount": 1
+    },
+    {
+        "player": "Eagles D/ST",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 1
+    },
+    {
+        "player": "Gabe Davis",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 1
+    },
+    {
+        "player": "Greg Zuerlein",
+        "winning_team": "Footprints Bomb Pop",
+        "bid_amount": 1
+    },
+    {
+        "player": "Dolphins D/ST",
+        "winning_team": "Arby's ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Adam Thielen",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Curtis Samuel",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 1
+    },
+    {
+        "player": "Rashid Shaheed",
+        "winning_team": "Arby's ",
+        "bid_amount": 2
+    },
+    {
+        "player": "Deshaun Watson",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 1
+    },
+    {
+        "player": "Khalil Shakir",
+        "winning_team": "Team Science",
+        "bid_amount": 1
+    },
+    {
+        "player": "Evan McPherson",
+        "winning_team": "La Porta Potty",
+        "bid_amount": 1
+    },
+    {
+        "player": "Tyler Conklin",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 1
+    },
+    {
+        "player": "Joshua Palmer",
+        "winning_team": "Arby's ",
+        "bid_amount": 1
+    },
+    {
+        "player": "DeMario Douglas",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Ja'Lynn Polk",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 1
+    },
+    {
+        "player": "Adonai Mitchell",
+        "winning_team": "Matt Gay",
+        "bid_amount": 1
+    },
+    {
+        "player": "Khalil Herbert",
+        "winning_team": "Keenan Allen's Landing",
+        "bid_amount": 1
+    },
+    {
+        "player": "Steelers D/ST",
+        "winning_team": "Team Science",
+        "bid_amount": 1
+    },
+    {
+        "player": "Blake Corum",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 1
+    },
+    {
+        "player": "Xavier Legette",
+        "winning_team": "Arby's ",
+        "bid_amount": 1
+    },
+    {
+        "player": "MarShawn Lloyd",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jaleel McLaughlin",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 1
+    },
+    {
+        "player": "Saints D/ST",
+        "winning_team": "Matt Gay",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jake Moody",
+        "winning_team": "Team Science",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jaguars D/ST",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 1
+    },
+    {
+        "player": "Michael Wilson",
+        "winning_team": "Arby's ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Bengals D/ST",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Chiefs D/ST",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 1
+    },
+    {
+        "player": "Ka'imi Fairbairn",
+        "winning_team": "Matt Gay",
+        "bid_amount": 1
+    },
+    {
+        "player": "Cameron Dicker",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 1
+    },
+    {
+        "player": "Tre Tucker",
+        "winning_team": "Arby's ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Cairo Santos",
+        "winning_team": "Sasquatch Borkley ",
+        "bid_amount": 1
+    },
+    {
+        "player": "Jake Bates",
+        "winning_team": "Kupp of Amon-Ra",
+        "bid_amount": 1
+    },
+    {
+        "player": "Miles Sanders",
+        "winning_team": "Matt Gay",
+        "bid_amount": 1
+    },
+    {
+        "player": "Brandin Cooks",
+        "winning_team": "Fayetteville Furries",
+        "bid_amount": 1
+    },
+    {
+        "player": "Romeo Doubs",
+        "winning_team": "Matt Gay",
+        "bid_amount": 1
+    }
+]
